@@ -1,0 +1,217 @@
+body{
+    font-family:'Lato', sans-serif !important;
+    background-color: #F2F2F2 !important;  
+}
+h1{
+    font-weight: 800 !important;
+}
+h5{
+    font-weight: bold !important;
+}
+.topMenu>UL>li{
+    margin: 10px 15px 0px 10px;
+    padding: 0rem 2rem 0rem 2rem;  
+}
+.topMenu>ul{
+    display: flex;
+    align-items:flex-end ;
+}
+.topMenu ul li div button{
+    background-color: #F2F2F2 !important;
+    color: black;
+    border: none !important;
+    position: relative;
+    top: 6px;
+}
+.topMenu{
+    display: flex;
+    padding: 0rem 2rem 1rem 2rem;
+    justify-content: space-between;
+    align-items: baseline ;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    border-bottom:solid rgba(51, 45, 45, 0.295) 1px ;
+    box-shadow: 0rem 0rem 1rem 0rem grey;
+}
+.topMenu img{
+    margin-top: 1rem;
+    width: 50%;
+    height: 50%;
+}
+.topMenu a{
+    text-decoration: none; 
+    color: black; 
+}
+.topMenu ul li div:hover button{
+    color: black !important;
+    border: none;
+    background-color: none;
+    border: none;
+}
+.topMenu li{
+    list-style: none;
+}
+.topMenu2{
+    display: none;
+}
+.fotosIndex{
+    display: flex;
+    justify-content:space-around;
+    padding: 5rem;
+    
+}
+.fotosIndex a{
+    text-decoration: none;
+    color: black;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+.fotosIndex:hover a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+.carrusel {
+    height: 25% !important;
+    width: 25% !important;
+}
+.mainCarrusel{
+    display: flex;
+    justify-content: center;
+}
+.galeria{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
+}
+.galeria a:hover p {
+    transform: scale(1);
+    transition: 1s;
+    bottom: 1rem;
+    background-color: white;
+    border: solid black 1px;
+}
+.galeria a:hover img {
+    transform: scale(1.5);
+    transition: 1s;
+}
+.galeria p {
+    transform: scale(0);
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    transition: 1s;
+}
+.galeria a{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    text-decoration: none;
+}
+.descripcionFoto{
+    display: flex;
+    justify-content: center;
+}
+.descripcionFoto p{
+    text-align: center;
+    width: 20rem;
+    height: 15rem;
+}
+.biografia{
+    display: flex;
+}
+.biografia img{
+width: 50%;
+height: 50%;
+margin-left: 5rem;
+}
+.biografia p{   
+    background-color: rgba(255, 255, 255, 0.541);
+    width: 50rem;
+    height: 30rem;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    top: 4rem;
+    right: 15rem;
+}
+@media only screen and (max-width: 484px){
+   .fotosIndex{
+       display: flex;
+       flex-direction: column;
+       margin-top: -7rem;
+       align-items: center;
+   }
+   .topMenu{
+       display: none;
+   }
+   .topMenu2{
+       display: flex;
+   }
+   .topMenu2 div{
+       display: none;
+   }
+   .fotosIndex a{
+    padding-top: 6rem;   
+    }
+    .topMenu2 ul li:hover ul{
+        display: flex;
+        flex-direction: column;
+        Z-index: 1;
+        position:absolute;
+        background-color: #F2F2F2;
+        border: solid black 1px;
+        text-align: start;
+        width: 15rem;
+        right: 5rem;
+        list-style-position: inside;
+    }
+    .topMenu2 ul li ul{
+        display: none;
+        flex-direction: column;
+        Z-index: 1;
+        position: relative;
+    }
+    .topMenu2 ul li img{
+        position: relative;
+        left: 2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    .galeriaResponsive{
+        border-top:solid black 1px ;
+    }
+    .links{
+        padding-right: -10rem;
+    }
+    .galeria{
+        flex-direction: column;
+        margin-top: -1rem;
+        align-items: center;
+    }
+    .galeria img{
+        padding-top: 3rem;
+    }
+    .biografia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .biografia img{
+        position: relative;
+        width: 80%;
+        height: 80%;
+        right: 45px;
+    }
+    .biografia p{
+        background-color: #F2F2F2;   
+        position:relative;
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+        left: 5px;
+    }
+}

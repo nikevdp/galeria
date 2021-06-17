@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap");
+.header-rojo {
+  color: #FE1454 !important; }
+
+.header-azul {
+  color: #1366B7 !important; }
+
+.header-naranja {
+  color: #FF8921 !important; }
+
+.header-turqueza {
+  color: #20AD8D !important; }
+
+.header-violeta {
+  color: #CB08F0 !important; }
+
+.img--tamaño1 {
+  transform: scale(1); }
+
+.img--tamaño2 {
+  transform: scale(2); }
+
+body {
+  font-family: 'Lato', sans-serif !important;
+  background-color: #F2F2F2 !important; }
+
+h5 {
+  font-weight: bold !important; }
+
+.topMenu {
+  display: flex;
+  padding: 0rem 2rem 1rem 2rem;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: solid rgba(51, 45, 45, 0.295) 1px;
+  box-shadow: 0rem 0rem 1rem 0rem grey; }
+  .topMenu img {
+    margin-top: 1rem;
+    width: 50%;
+    height: 50%; }
+  .topMenu a {
+    text-decoration: none;
+    color: black; }
+  .topMenu li {
+    list-style: none; }
+  .topMenu UL {
+    display: flex;
+    align-items: flex-end; }
+    .topMenu UL li {
+      margin: 10px 15px 0px 10px;
+      padding: 0rem 2rem 0rem 2rem; }
+      .topMenu UL li ul {
+        display: none; }
+      .topMenu UL li div:hover button {
+        color: black !important;
+        border: none;
+        background-color: none;
+        border: none; }
+      .topMenu UL li div button {
+        background-color: #F2F2F2 !important;
+        color: black;
+        border: none !important;
+        position: relative;
+        top: 6px; }
+
+.topMenu--responsive {
+  display: none; }
+
+.fotosIndex {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem; }
+  .fotosIndex a {
+    text-decoration: none;
+    color: black;
+    filter: drop-shadow(2px 2px 2px grey); }
+
+.fotosIndex:hover a {
+  text-decoration: none;
+  color: black; }
+
+h1 {
+  text-align: center; }
+
+.carrusel {
+  height: 25% !important;
+  width: 25% !important; }
+
+.mainCarrusel {
+  display: flex;
+  justify-content: center; }
+
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 3rem; }
+  .galeria img {
+    transition: 1s;
+    z-index: 2; }
+  .galeria p {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    transition: 1s;
+    z-index: 1; }
+  .galeria a {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    text-decoration: none; }
+
+.galeria a:hover img {
+  transform: scale(1.5);
+  transition: 1s; }
+
+.descripcionFoto {
+  display: flex;
+  justify-content: center; }
+  .descripcionFoto p {
+    text-align: center;
+    width: 20rem;
+    height: 15rem; }
+
+.biografia:not(img) {
+  align-items: center; }
+
+.biografia {
+  display: flex;
+  margin-top: 30px;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px; }
+  .biografia img {
+    width: 1100px;
+    height: 709px; }
+  .biografia aside {
+    background-color: rgba(255, 255, 255, 0.541);
+    width: 1240px;
+    height: 626px;
+    position: absolute;
+    right: 1rem; }
+    .biografia aside nav {
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center; }
+    .biografia aside p {
+      font-size: 32px;
+      text-align: center; }
+
+@media only screen and (max-width: 484px) {
+  .fotosIndex {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7rem;
+    align-items: center; }
+  .topMenu {
+    display: none; }
+  .topMenu--responsive {
+    display: flex; }
+    .topMenu--responsive div {
+      display: none; }
+    .topMenu--responsive ul li img {
+      position: relative;
+      left: 2rem;
+      width: 2rem;
+      height: 2rem; }
+    .topMenu--responsive ul li ul {
+      display: none;
+      flex-direction: column;
+      Z-index: 1;
+      position: relative; }
+    .topMenu--responsive ul li:hover ul {
+      display: flex;
+      flex-direction: column;
+      Z-index: 1;
+      position: absolute;
+      background-color: #F2F2F2;
+      border: solid black 1px;
+      text-align: start;
+      width: 15rem;
+      right: 5rem;
+      list-style-position: inside; }
+  .fotosIndex a {
+    padding-top: 6rem; }
+  .galeria--Responsive {
+    border-top: solid black 1px; }
+  .links {
+    padding-right: -10rem; }
+  .galeria {
+    flex-direction: column;
+    margin-top: -1rem;
+    align-items: center; }
+    .galeria img {
+      padding-top: 3rem; }
+  .biografia {
+    display: flex;
+    flex-direction: column; }
+    .biografia aside {
+      margin-top: 10px;
+      width: 200%;
+      height: auto;
+      background-color: #F2F2F2;
+      position: relative; }
+      .biografia aside p {
+        font-size: 20px;
+        text-align: center; }
+      .biografia aside nav {
+        font-size: 20px;
+        text-align: center; }
+    .biografia img {
+      position: relative;
+      width: 200%;
+      height: 200%; } }

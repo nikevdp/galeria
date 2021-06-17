@@ -1,0 +1,269 @@
+@import "tipografias";
+@import "colores";
+$colores:(
+    rojo: #FE1454,
+    azul: #1366B7,
+    naranja: #FF8921,
+    turqueza: #20AD8D,
+    violeta: #CB08F0
+  );  
+@each $n, $h in $colores{
+  .header-#{$n} { 
+        color: $h !important;
+   }
+}
+@for $i from 1 through 2 {
+  .img--tamaño#{$i} { transform: scale(1 * $i); }
+}
+
+body{
+  font-family:'Lato', sans-serif !important;
+  background-color: #F2F2F2 !important;  
+}
+h5{
+  font-weight: bold !important;
+}
+.topMenu{
+  display: flex;
+  padding: 0rem 2rem 1rem 2rem;
+  justify-content: space-between;
+  align-items: baseline ;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border-bottom:solid rgba(51, 45, 45, 0.295) 1px ;
+  box-shadow: 0rem 0rem 1rem 0rem grey;
+  img{
+    margin-top: 1rem;
+    width: 50%;
+    height: 50%;
+  }
+  a{
+    text-decoration: none; 
+    color: black; 
+  }
+  li{
+    list-style: none;
+  }
+  UL{
+    display: flex;
+    align-items:flex-end ;
+    li{
+      margin: 10px 15px 0px 10px;
+      padding: 0rem 2rem 0rem 2rem;
+      ul{
+        display: none;
+      }
+      div:hover{ 
+        button{
+          color: black !important;
+          border: none;
+          background-color: none;
+          border: none;
+        }  
+      }
+      div{ 
+        button{ 
+          background-color: #F2F2F2 !important;
+          color: black;
+          border: none !important;
+          position: relative;
+          top: 6px;
+        }  
+      }
+    }
+  }         
+}
+
+.topMenu--responsive{
+  display: none;
+}
+.fotosIndex{
+  display: flex;
+  justify-content:space-around;
+  padding: 5rem;
+  a{
+    text-decoration: none;
+    color: black;
+    filter: drop-shadow(2px 2px 2px grey);
+  }
+  
+}
+.fotosIndex:hover a{
+  text-decoration: none;
+  color: black;
+}
+h1{
+  text-align: center;
+}
+.carrusel {
+  height: 25% !important;
+  width: 25% !important;
+}
+.mainCarrusel{
+  display: flex;
+  justify-content: center;
+}
+.galeria{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 3rem;
+  img{
+    transition: 1s;
+    z-index: 2;
+  }
+  p{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    transition: 1s;
+    z-index: 1;
+  }
+  a{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    text-decoration: none;
+  }
+}
+.galeria{ 
+  a:hover{
+    img {
+      transform: scale(1.5);
+      transition: 1s;
+    }  
+  }  
+}
+.descripcionFoto{
+  display: flex;
+  justify-content: center;
+  p{
+    text-align: center;
+    width: 20rem;
+    height: 15rem;
+  }
+}
+.biografia:not(img){ 
+  align-items: center;
+}
+.biografia{
+  display: flex;
+  margin-top: 30px;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  img{
+    width: 1100px;
+    height: 709px;
+  }
+    aside{  
+      background-color: rgba(255, 255, 255, 0.541);
+      width: 1240px;
+      height: 626px;
+      position: absolute;
+      right: 1rem;
+      nav{
+        font-size: 35px;
+        font-weight: bold;
+        text-align:center;
+      }
+      p{
+        font-size: 32px;
+        text-align: center;
+      }
+    }  
+}
+@media only screen and (max-width: 484px){
+  .fotosIndex{
+     display: flex;
+     flex-direction: column;
+     margin-top: -7rem;
+     align-items: center;
+ }
+  .topMenu{
+     display: none;
+ }
+  .topMenu--responsive{
+    display: flex;
+    div{
+      display: none;
+    }  
+    ul{
+      li{
+        img{
+          position: relative;
+          left: 2rem;
+          width: 2rem;
+          height: 2rem;
+        } 
+        ul{
+          display: none;
+          flex-direction: column;
+          Z-index: 1;
+          position: relative;
+        }  
+      } 
+      li:hover{ 
+        ul{
+          display: flex;
+          flex-direction: column;
+          Z-index: 1;
+          position:absolute;
+          background-color: #F2F2F2;
+          border: solid black 1px;
+          text-align: start;
+          width: 15rem;
+          right: 5rem;
+          list-style-position: inside;
+        }
+      }        
+    }
+  }
+  .fotosIndex{ 
+    a{
+    padding-top: 6rem;
+    }   
+  }
+  .galeria--Responsive{
+      border-top:solid black 1px ;
+  }
+  .links{
+      padding-right: -10rem;
+  }
+  .galeria{
+      flex-direction: column;
+      margin-top: -1rem;
+      align-items: center;
+      img{
+        padding-top: 3rem;
+      }
+  }
+  .biografia{
+    display: flex;
+    flex-direction: column;
+    aside{
+      margin-top: 10px;
+      width: 200%;
+      height: auto;
+      background-color: #F2F2F2;
+      position: relative;
+      p{
+        font-size: 20px;
+        text-align: center;
+      }
+      nav{
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    img{
+      position: relative;
+      width: 200%;
+      height: 200%;
+    }
+  }
+}
+
+  
