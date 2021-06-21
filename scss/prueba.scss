@@ -133,8 +133,12 @@ h1{
     img {
       transform: scale(1.5);
       transition: 1s;
+      z-index: 3;
     }  
   }  
+}
+.galeria-responsive{
+  display: none;
 }
 .descripcionFoto{
   display: flex;
@@ -175,7 +179,87 @@ h1{
       }
     }  
 }
-@media only screen and (max-width: 484px){
+
+
+@media only screen and (max-width: 1000px){
+    .topMenu{
+      display: none;
+  }
+  .topMenu--responsive{
+    display: flex;
+    div{
+      display: none;
+    }  
+    ul{
+      li{
+        img{
+          position: relative;
+          left: 2rem;
+          width: 2rem;
+          height: 2rem;
+        } 
+        ul{
+          display: none;
+          flex-direction: column;
+          Z-index: 1;
+          position: relative;
+        }  
+      } 
+      li:hover{ 
+        ul{
+          display: flex;
+          flex-direction: column;
+          Z-index: 1;
+          position:absolute;
+          background-color: #F2F2F2;
+          border: solid black 1px;
+          text-align: start;
+          width: 15rem;
+          right: 5rem;
+          list-style-position: inside;
+        }
+      }        
+    }
+  }
+  .galeria{
+    display: none;
+  }
+  .galeria-responsive{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
+    img{
+      transition: 1s;
+      z-index: 2;
+    }
+    p{
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      transition: 1s;
+      z-index: 1;
+    }
+    a{
+      display: flex;
+      flex-direction: column;
+      width: 10rem;
+      text-decoration: none;
+    }
+  }
+  .galeria-responsive{ 
+    a:hover{
+      img {
+        transform: scale(1.5);
+        transition: 1s;
+        z-index: 3;
+      }  
+    }  
+  }
+}
+@media only screen and (max-width: 500px){
   .fotosIndex{
      display: flex;
      flex-direction: column;
@@ -233,6 +317,7 @@ h1{
       padding-right: -10rem;
   }
   .galeria{
+      display: flex;
       flex-direction: column;
       margin-top: -1rem;
       align-items: center;
@@ -264,6 +349,7 @@ h1{
       height: 200%;
     }
   }
+  .galeria-responsive{
+    display: none;
+  }
 }
-
-  
