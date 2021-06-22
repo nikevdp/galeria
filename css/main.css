@@ -170,11 +170,6 @@ h1 {
       width: 2rem;
       height: 2rem; }
     .topMenu--responsive ul li ul {
-      display: none;
-      flex-direction: column;
-      Z-index: 1;
-      position: relative; }
-    .topMenu--responsive ul li:hover ul {
       display: flex;
       flex-direction: column;
       Z-index: 1;
@@ -213,7 +208,7 @@ h1 {
     transition: 1s;
     z-index: 3; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
   .fotosIndex {
     display: flex;
     flex-direction: column;
@@ -231,12 +226,6 @@ h1 {
       width: 2rem;
       height: 2rem; }
     .topMenu--responsive ul li ul {
-      display: none;
-      flex-direction: column;
-      Z-index: 1;
-      position: relative; }
-    .topMenu--responsive ul li:hover ul {
-      display: flex;
       flex-direction: column;
       Z-index: 1;
       position: absolute;

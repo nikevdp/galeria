@@ -199,14 +199,6 @@ h1{
           height: 2rem;
         } 
         ul{
-          display: none;
-          flex-direction: column;
-          Z-index: 1;
-          position: relative;
-        }  
-      } 
-      li:hover{ 
-        ul{
           display: flex;
           flex-direction: column;
           Z-index: 1;
@@ -217,8 +209,8 @@ h1{
           width: 15rem;
           right: 5rem;
           list-style-position: inside;
-        }
-      }        
+        }  
+      }      
     }
   }
   .galeria{
@@ -283,15 +275,6 @@ h1{
           height: 2rem;
         } 
         ul{
-          display: none;
-          flex-direction: column;
-          Z-index: 1;
-          position: relative;
-        }  
-      } 
-      li:hover{ 
-        ul{
-          display: flex;
           flex-direction: column;
           Z-index: 1;
           position:absolute;
@@ -301,8 +284,8 @@ h1{
           width: 15rem;
           right: 5rem;
           list-style-position: inside;
-        }
-      }        
+        }  
+      }             
     }
   }
   .fotosIndex{ 
