@@ -201,12 +201,12 @@ h1{
         ul{
           display: flex;
           flex-direction: column;
-          Z-index: 1;
+          Z-index: 4;
           position:absolute;
           background-color: #F2F2F2;
           border: solid black 1px;
           text-align: start;
-          width: 15rem;
+          width: 17rem;
           right: 5rem;
           list-style-position: inside;
         }  
@@ -221,7 +221,7 @@ h1{
     justify-content: space-between;
     margin-left: 10rem;
     margin-right: 10rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     img{
       transition: 1s;
       z-index: 2;
@@ -238,6 +238,7 @@ h1{
       display: flex;
       flex-direction: column;
       width: 10rem;
+      height: 15rem;
       text-decoration: none;
     }
   }
