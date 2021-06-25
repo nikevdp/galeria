@@ -1,0 +1,10 @@
+.boton{
+    background-color: rgb(105, 143, 47);
+    border-radius: 20px;
+    transition: 1s;
+}
+.boton:hover{
+    background-color: rgb(167, 252, 39);
+    transform: scale(1.2);
+    transition: 1s;
+}

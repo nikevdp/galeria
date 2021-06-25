@@ -1,5 +1,6 @@
 @import "tipografias";
 @import "colores";
+@import "boton";
 $colores:(
     rojo: #FE1454,
     azul: #1366B7,
@@ -179,8 +180,17 @@ h1{
       }
     }  
 }
-
-
+.contenedorContacto{
+  display: flex;
+  justify-content: center;
+}
+.contacto{
+  border: solid rgba(0, 0, 0, 0.514) 1px;
+  border-radius: 20px;
+  width: 30rem;
+  height: 30rem;
+  padding: 9px;
+}
 @media only screen and (max-width: 1000px){
     .topMenu{
       display: none;
@@ -252,6 +262,7 @@ h1{
     }  
   }
 }
+
 @media only screen and (max-width: 750px){
   .fotosIndex{
      display: flex;
