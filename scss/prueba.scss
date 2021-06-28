@@ -1,5 +1,4 @@
 @import "tipografias";
-@import "colores";
 @import "boton";
 $colores:(
     rojo: #FE1454,
@@ -74,6 +73,16 @@ h5{
     }
   }         
 }
+.preguntas{
+  display: flex;
+  margin: 2rem 2rem 0rem 2rem;
+  flex-direction: column;
+  div{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: max-content;
+  }
+}
 
 .topMenu--responsive{
   display: none;
@@ -122,7 +131,7 @@ h1{
     transition: 1s;
     z-index: 1;
   }
-  a{
+  div{
     display: flex;
     flex-direction: column;
     width: 10rem;
@@ -130,7 +139,7 @@ h1{
   }
 }
 .galeria{ 
-  a:hover{
+  div:hover{
     img {
       transform: scale(1.5);
       transition: 1s;
@@ -244,7 +253,7 @@ h1{
       transition: 1s;
       z-index: 1;
     }
-    a{
+    div{
       display: flex;
       flex-direction: column;
       width: 10rem;
@@ -253,7 +262,7 @@ h1{
     }
   }
   .galeria-responsive{ 
-    a:hover{
+    div:hover{
       img {
         transform: scale(1.5);
         transition: 1s;
@@ -288,7 +297,7 @@ h1{
         } 
         ul{
           flex-direction: column;
-          Z-index: 1;
+          Z-index: 5;
           position:absolute;
           background-color: #F2F2F2;
           border: solid black 1px;
